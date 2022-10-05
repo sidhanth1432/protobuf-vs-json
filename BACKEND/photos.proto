@@ -1,0 +1,19 @@
+package photospackage;
+
+
+syntax="proto3";
+
+
+message RequestMessage{
+    int32 albumId=1;
+    int32 id=2;
+    string title=3;
+    string url=4;
+    string thumbnailUrl=5;
+
+};
+
+
+message Photos{
+    repeated RequestMessage photos=1;
+}
